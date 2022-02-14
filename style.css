@@ -82,8 +82,13 @@ h3 {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline transparent;
     color: inherit;
+    transition: text-decoration 200ms ease-in-out;
+}
+
+a:hover {
+    text-decoration-color: var(--txt-clr);
 }
 
 nav>ul {
