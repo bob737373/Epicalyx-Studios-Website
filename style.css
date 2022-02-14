@@ -59,6 +59,15 @@ header {
     align-items: center;
 }
 
+section {
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 nav>ul {
     display: flex;
     margin: auto;
@@ -68,10 +77,6 @@ nav>ul {
 nav>ul>li {
     list-style-type: none;
     padding: 0.5rem 1rem;
-}
-
-section {
-    padding: 2rem;
 }
 
 .logo {
