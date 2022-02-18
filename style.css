@@ -39,6 +39,7 @@ font-family: 'Roboto Serif', sans-serif;
 :root {
     --bg-clr: #0d203d;
     --txt-clr: #ffffff;
+    --txt-clr-grey: #aaaaaa;
 
     font-family: 'Roboto', sans-serif;
 
@@ -85,10 +86,12 @@ a {
     text-decoration: underline transparent;
     color: inherit;
     transition: text-decoration 200ms ease-in-out;
+    width: 100%;
+    height: 100%;
 }
 
 a:hover {
-    text-decoration-color: var(--txt-clr);
+    text-decoration-color: inherit;
 }
 
 nav>ul {
@@ -102,8 +105,32 @@ nav>ul>li {
     padding: 0.5rem 1rem;
 }
 
+.btn {
+    background-color: var(--txt-clr);
+    color: var(--bg-clr);
+    border: none;
+    padding: 0.75rem 1.25rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 200ms ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--txt-clr-grey);
+}
+
+.subtitle {
+    text-align: center;
+}
+
 .logo {
     margin: 1rem;
+}
+
+.support-links {
+    width: max-content;
+    margin: auto;
 }
 
 .card-row {
@@ -114,7 +141,7 @@ nav>ul>li {
 .card {
     margin: 1rem;
     max-width: 25rem;
-    width: 30%;
+    width: 40%;
 }
 
 .screenshot {
