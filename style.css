@@ -54,7 +54,7 @@ html, body {
     overflow-x: hidden;
 }
 
-header {
+header, footer {
     display: flex;
     flex-direction: column;
     align-items: center;
