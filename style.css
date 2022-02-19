@@ -71,6 +71,8 @@ header, footer {
 
 section {
     width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
 }
 
 h1, h2, h3, h4 {
@@ -191,6 +193,10 @@ nav>ul>li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: start;
+}
+
+.card--alt {
     justify-content: end;
 }
 
