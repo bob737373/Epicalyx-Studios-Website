@@ -63,6 +63,9 @@ header, footer {
 
 section {
     padding: 2rem;
+    width: 80%;
+    max-width: 1400px;
+    margin: auto;
 }
 
 h1, h2, h3, h4 {
@@ -99,15 +102,20 @@ a:hover {
     text-decoration-color: inherit;
 }
 
-nav>ul {
+nav {
     display: flex;
-    margin: auto;
+    justify-content: center;
+}
+
+nav>* {
+    padding: 0;
     width: max-content;
 }
 
 nav>ul>li {
     list-style-type: none;
     padding: 0.5rem 1rem;
+    display: inline;
 }
 
 .title {
@@ -136,6 +144,10 @@ nav>ul>li {
 
 .logo {
     margin: 1rem;
+}
+
+.nav-logo {
+    width: 3rem;
 }
 
 .support-links {
@@ -189,6 +201,10 @@ nav>ul>li {
 
 .blog-subtitle {
     margin-top: 0;
+}
+
+#media {
+    display: none;
 }
 
 @media (max-width: 900px) {
