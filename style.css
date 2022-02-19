@@ -183,6 +183,14 @@ nav>ul>li {
     margin: auto;
 }
 
+.blog-title {
+    margin-bottom: 0;
+}
+
+.blog-subtitle {
+    margin-top: 0;
+}
+
 @media (max-width: 900px) {
     .card-row {
         flex-direction: column;
