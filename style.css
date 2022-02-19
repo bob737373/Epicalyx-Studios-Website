@@ -176,6 +176,13 @@ nav>ul>li {
     box-shadow: 0 4px 8px 0 rgba(200,200,200,0.3);
 }
 
+.blog-post {
+    width: max-content;
+    max-width: 80%;
+    min-width: 50%;
+    margin: auto;
+}
+
 @media (max-width: 900px) {
     .card-row {
         flex-direction: column;
