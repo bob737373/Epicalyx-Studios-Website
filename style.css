@@ -152,10 +152,28 @@ nav>ul>li {
     margin: 1rem;
     max-width: 25rem;
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
 }
 
-.screenshot {
+.card-title {
+    margin: 0;
+}
+
+.screenshot, .photo {
     width: 100%;
+}
+
+.photo-container {
+    width: 65%;
+    height: max-content;
+    margin-bottom: 0.5rem;
+}
+
+.photo {
+    box-shadow: 0 4px 8px 0 rgba(200,200,200,0.3);
 }
 
 @media (max-width: 900px) {
