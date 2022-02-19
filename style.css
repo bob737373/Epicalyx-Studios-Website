@@ -38,6 +38,7 @@ font-family: 'Roboto Serif', sans-serif;
 
 :root {
     --bg-clr: #0d203d;
+    --bg-clr2: #192d4b;
     --txt-clr: #ffffff;
     --txt-clr-grey: #aaaaaa;
 
@@ -48,10 +49,17 @@ font-family: 'Roboto Serif', sans-serif;
 
 }
 
+html {
+    overflow-x: hidden;
+}
+
+body {
+    line-height: 1.7;
+}
+
 html, body {
     margin: 0;
     max-width: 100%;
-    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -62,10 +70,7 @@ header, footer {
 }
 
 section {
-    padding: 2rem;
-    width: 80%;
-    max-width: 1400px;
-    margin: auto;
+    width: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -103,19 +108,38 @@ a:hover {
 }
 
 nav {
+    position: sticky;
+    top: 0;
+    z-index: 9;
     display: flex;
     justify-content: center;
+    background: #0000007a;
+    width: max-content;
+    margin: auto;
+    padding: 0 10rem;
 }
 
 nav>* {
     padding: 0;
     width: max-content;
+    font-weight: bold;
 }
 
 nav>ul>li {
     list-style-type: none;
     padding: 0.5rem 1rem;
     display: inline;
+}
+
+.section--alt {
+    background-color: var(--bg-clr2);
+}
+
+.content-container {
+    padding: 2rem;
+    width: 80%;
+    max-width: 1400px;
+    margin: auto;
 }
 
 .title {
@@ -208,6 +232,11 @@ nav>ul>li {
 }
 
 @media (max-width: 900px) {
+
+    nav {
+        padding: 0 2rem;
+    }
+
     .card-row {
         flex-direction: column;
         align-items: center;
