@@ -223,6 +223,7 @@ nav>ul>li {
     max-width: 80%;
     min-width: 50%;
     margin: auto;
+    padding: 1rem 0;
 }
 
 .blog-title {
@@ -234,7 +235,7 @@ nav>ul>li {
 }
 
 #media {
-    display: none;
+    /* display: none; */
 }
 
 @media (max-width: 900px) {
